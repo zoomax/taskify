@@ -1,21 +1,8 @@
-import {
-  queryAllByTestId,
-  render,
-  screen,
-  fireEvent,
-} from "@testing-library/react";
-import "fake-indexeddb";
-import List from "./List";
+import { render, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { combineReducers, createStore } from "redux";
 import { TaskReducer } from "../../store/reducer";
-import React from "react";
-import store from "../../store/index";
-// import { DragDropContext } from "react-beautiful-dnd";
-import { Status, TaskOpertaions } from "../../models/Todo.model";
 import App from "../../App";
-const todoes = [];
-const inProgressTodoes = [];
 const renderWithRedux = (
   component,
   { state, store = createStore(combineReducers({ tasks: TaskReducer })) } = {}
