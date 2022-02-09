@@ -23,7 +23,7 @@ Drag task card from "Completed Tasks" column to nowhere to remove the task ;
 
 ## what also can this app do
 
-1.update task at any time
-2.remove task at any time
-3.save tasks for later use using indexedDB
-4.save state locally using Redux
+- update task at any time
+- remove task at any time
+- save tasks for later use using indexedDB
+- save state locally using Redux
