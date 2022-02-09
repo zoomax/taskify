@@ -1,0 +1,39 @@
+.todoes__single {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: rgb(246, 243, 46);
+}
+.todoes__single:focus {
+  outline: none;
+}
+.icon {
+  display: inline-block;
+  /* margin-top: 5px */
+  padding: 5px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.todoes__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+
+@media (max-width: 700px) {
+  .todoes {
+    width: 95% !important;
+    margin-bottom: 10px;
+  }
+  .input {
+    width: 95%;
+  }
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,6 @@
+export enum TaskActionTypes {
+  CREATE_TASK = "CREATE_TASK",
+  UPDATE_TASK = "UPDATE_TASK",
+  DELETE_TASK = "DELETE_TASK",
+  GET_TASKS = "GET_TASKS",
+}

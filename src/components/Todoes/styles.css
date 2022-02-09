@@ -1,0 +1,25 @@
+.todoes {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  padding: 15px;
+  background-color: rgb(50, 195, 205);
+  border-radius: 5px;
+}
+.todoes__heading {
+  font-size: 30px;
+  color: white;
+}
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.remove {
+  background-color: rgb(54, 253, 36);
+}
+.inProgress {
+  background-color: rgb(245, 152, 47);
+}
