@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Payload, TaskOpertaions, Todo } from "../../models/Todo.model";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 import { Draggable } from "react-beautiful-dnd";
 import "./styles.css";
 import { deleteTask, updateTask } from "../../store/actions";
 import { connect } from "react-redux";
-import TodoesService  from "../../utils/db/db";
+import TodoesService from "../../utils/db/db";
 interface Props {
   todo: Todo;
   index: number;
@@ -142,4 +142,6 @@ const mapDispatchToProps = (dispatch: any) => {
     deleteTask: (payload: Payload) => dispatch(deleteTask(payload)),
   };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(SingleTodo);
+export default React.memo(
+  connect(mapStateToProps, mapDispatchToProps)(SingleTodo)
+);
